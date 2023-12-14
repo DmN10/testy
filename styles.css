@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 1000px;
+    background-image: url(Images/main-car.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.9);
+}
+
+.navbar {
+    width: 85%;
+    height:100px;
+    display:block;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+}
+
+ul li {
+    width: 100%;
+    display: inline;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color:#fd852f;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.navbar h2 {
+    font-family:'Lucida Sans';
+    color: #fd852f;
+    margin-bottom: 30px;   
+}
+
+.content {
+    width: 30%;
+    height: 400px;
+    display:block;
+    padding:100px;
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.content h3 {
+    color: #fd852f;
+    padding-bottom: 15px;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.content p {
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+.content-btn {
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px;
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.content a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color:white;
+    transition: 0.3s;
+}
+
+.content-btn:hover {
+    background: #fd852f;
+    transition: 0.4s ease-in-out;
+    border: none;
+    transform: translateY(-10px);
+}
+
+.about {
+    display: flex;
+    margin: 100px 50px 0px 600px;
+    gap: 20px;
+}
+
+.about img {
+    width: 450px;
+}
+
+.about-content {
+    display: block;
+    text-align: left;
+    width:100%;
+    margin-left: -150px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding:10px;
+    background-color: white;
+
+}
+
+.about-content h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fd852f;
+
+}
+
+.about-content p {
+    font-size: 18px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-image {
+    display: flex;
+    width: 100%;
+}
+
+.about-image img {
+    width: 450px;
+    height: 350px;
+    margin-top: -200px;
+    margin-left: 100px;
+}
+
+.new-cars-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px auto 20px auto;
+    width: 95%;
+    padding: 20px;
+    color:#fd852f;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.new-cars-text p {
+    border: 1px solid #fd852f;
+    border-radius: 5px 5px 80px 5px;
+    width: 70px;
+    height: 70px;
+    background: #fd852f;
+}
+
+#figure {
+    border: 1px solid #fd852f;
+    border-radius: 5px 5px 5px 80px;
+    width: 70px;
+    height: 70px;
+    background: #fd852f;
+}
+
+.new-cars {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(24, 21, 28, 1);
+    background-image: linear-gradient(131deg, rgba(24, 21, 28, 1) 47%, rgba(255, 255, 255, 1) 54%);
+}
+
+.new-car img {
+    width: 350px; 
+    height: 150px;
+}
+
+.new-car {
+    box-shadow: 1px 1px 10px gray;
+    padding: 20px 20px 200px 20px;
+    height: 200px;
+    background-color: rgba(90, 90, 90, 1);
+    background-image: linear-gradient(180deg, rgba(90, 90, 90, 1) 0%, rgba(255, 255, 255, 1) 56%);
+    z-index: 0;
+
+}
+
+.description {
+    height: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: #fd852f;
+}
+
+.description p {
+    font-size: 17px;
+}
+
+.buy-now-btn {
+    margin-top: 30px;
+    font-size: 19px;
+    border: 1px solid #fd852f;
+    padding: 10px;
+    width: 150px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animation {
+    background: #fd852f;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.buy-now-btn:hover .btn-animation {
+    height: 100%;
+}
+
+.new-car:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.e-cars-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    width: 95%;
+    padding: 20px;
+    margin: 200px auto 20px auto;
+    color:#fd852f;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.e-cars-text p {
+    border: 1px solid #fd852f;
+    border-radius: 5px 5px 80px 5px;
+    width: 70px;
+    height: 70px;
+    background: #fd852f;
+}
+
+.e-cars {
+    width: 100%;
+    height: 500px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:white;
+}
+
+.e-car img {
+    width: 350px; 
+    height: 150px;
+}
+
+.e-car {
+    box-shadow: 1px 1px 10px gray;
+    padding: 20px 20px 200px 20px;
+    height: 200px;
+    background-color: rgba(90, 90, 90, 1);
+    background-image: linear-gradient(180deg, rgba(90, 90, 90, 1) 0%, rgba(255, 255, 255, 1) 56%);
+    z-index: 0;
+
+}
+
+.description {
+    height: 150px;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+
+.description p {
+    font-size: 17px;
+}
+
+.buy-now-btn {
+    margin-top: 30px;
+    font-size: 19px;
+    border: 1px solid #fd852f;
+    padding: 10px;
+    width: 150px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animation {
+    background: #fd852f;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.buy-now-btn:hover .btn-animation {
+    height: 100%;
+}
+
+.e-car:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.special-offer-row {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding-left: 100px;
+    text-wrap: wrap;
+    background-color: rgba(24, 21, 28, 1);
+    background-image: linear-gradient(131deg, rgba(24, 21, 28, 1) 47%, rgba(255, 255, 255, 1) 54%);
+    
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col h1 {
+    color: white;
+    font-size: 35px;
+    text-align: start;
+    line-height: 80px;
+    width: 70%;
+    
+}
+
+.col span {
+    color: #fd852f;
+    font-weight: bold;
+}
+
+.col h3 {
+    margin-top: 200px;
+    border: 1px solid white;
+    width: 40%;
+    padding-top:15px ;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.col h3:hover {
+    background: #fd852f;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.card {
+    width:400px;
+    height: 300px;
+    display: inline-block;
+    padding:15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card1 {
+    background-image: url(Images/Audi\ RSQ8\ 1.jpg);
+}
+
+.card2 {
+    background-image: url(Images/Audi\ RSQ8\ 3.jpg);
+}
+
+.card3 {
+    background-image: url(Images/Audi\ RSQ8\ 4.jpg);
+}
+
+.card4 {
+    background-image: url(Images/Audi\ RSQ8\ 2.jpg);
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(24, 21, 28, 1);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.col1 h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #fd852f;
+  text-align: start;
+}
+
+.col1 p {
+  color: white;
+  margin-top:30px;
+  margin-left: 50px;
+}
+
+.col2 h3 {
+  margin-top: 20px;
+  color: #fd852f;
+}
+
+.col3 h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fd852f;
+}
+
+.col3 p {
+  font-size: 25px;
+  text-wrap: wrap;
+  width: 400px;
+  margin-right: 20px;
+  color: white;
+}
+
+.col2 i {
+  margin-right: 10px;
+  align-items: center;
+}
+
+.col1 i {
+  margin-top: 50px;
+  margin-left: 30px;
+  padding: 10px;
+  background: #fd852f;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.col1 i:hover {
+  background: #fdad74;
+  transition: 0.3s;
+}
